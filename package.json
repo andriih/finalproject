@@ -1,0 +1,19 @@
+{
+  "name": "final_project_site_brain_acad",
+  "version": "1.0.0",
+  "description": "Final Project Site Brain ACademy project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriih/finalproject.git"
+  },
+  "author": "Andrii Hnatyshyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriih/finalproject/issues"
+  },
+  "homepage": "https://github.com/andriih/finalproject#readme"
+}
