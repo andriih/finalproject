@@ -9,12 +9,74 @@ html,body{
 }
 .wrapper{
 	min-height: 100%;
+	//width: 1920px;
+	width: 100%;
 }
-
 .header{
-	height: 100px;
+	display:block;
+	height: 837px;
+	border: @border1;
+	background-image: url('../img/header-bgc.png');
+	background-size:100% 100%;
 }
-.footer{
+.navbar{
+	border: @border1;
+	display: block;
+	//overflow: hidden;
+	/////////////////////////////LOGO////////////////////////////
+	&__logo{
+		display: inline-block;
+		width: 20%;
+		height: 104px;
+		border: @border1;
+	}
+
+	/////////////////////////////menu//////////////////////////////////
+	&__elements {
+		width: 40%;
+		border: @border1;
+		margin: 0 auto;
+		&__menu {
+			list-style: none;
+			margin: 0 auto;
+			border: @border1;
+
+			& .navbar__item {
+				display: inline-block;
+				margin-right:40px;
+				& .navbar__link {
+					display: inline-block;
+					text-align: center;
+					vertical-align: middle;
+					height: 104px;
+					width: 90px;
+					text-decoration: none;
+					border: @border1;
+					&:hover {
+						border-bottom: 1px solid #33b4fc;
+					}
+					&:after {
+						content: "";
+						display: inline-block;
+						vertical-align: middle;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	&__contactarea{
+		display: block;
+		height: 104px;			
+		border: @border1;
+		width: 20%;
+	}
+}
+.navbar__elements__menu {
+	display: inline-block;
+}
+.footer {
 	height: 200px;
 	margin-top: 200px;
 }
