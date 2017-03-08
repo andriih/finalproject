@@ -13,27 +13,33 @@ html,body{
 	width: 100%;
 }
 .header{
-	display:block;
 	height: 837px;
 	border: @border1;
 	background-image: url('../img/header-bgc.png');
 	background-size:100% 100%;
 }
 .navbar{
+	height:auto;
 	border: @border1;
 	display: block;
-	//overflow: hidden;
+	
 	/////////////////////////////LOGO////////////////////////////
 	&__logo{
+		height: 100%;
 		display: inline-block;
 		width: 20%;
-		height: 104px;
 		border: @border1;
+		//margin: 0 auto;
+
+		&__img{
+			display: inline-block;
+		}
 	}
 
 	/////////////////////////////menu//////////////////////////////////
 	&__elements {
-		width: 40%;
+		display: inline-block;
+		width: 50%;
 		border: @border1;
 		margin: 0 auto;
 		&__menu {
@@ -44,6 +50,7 @@ html,body{
 			& .navbar__item {
 				display: inline-block;
 				margin-right:40px;
+
 				& .navbar__link {
 					display: inline-block;
 					text-align: center;
@@ -67,8 +74,8 @@ html,body{
 	}
 
 	&__contactarea{
-		display: block;
-		height: 104px;			
+		display: inline-block;
+		height: 100%;			
 		border: @border1;
 		width: 20%;
 	}
