@@ -1,16 +1,38 @@
-// *{
-// 	margin: 0px;
-// 	padding: 0px;
-// 	box-sizing: border-box;
+ *{
+ 	margin: 0px;
+ 	padding: 0px;
+ 	box-sizing: border-box;
 // 	border: @border1;
 // 	color:white;
-// }
+ }
 
 
 .header__area{
 	height: 838px;
 	background-image: url('../img/header-bgc.png');
 	background-size:100% 100%;
+}
+.navbar__wrapper{
+	width:@content-width;
+}
+.logo-txt{
+	font-family:"BebasNeueBold";
+	text-transform: uppercase;
+	margin-top:17px;
+	color: white;
+	font-size:20px;
+}
+.contact__wrapper{
+	color: white;
+	& .number{
+		font-size:19px;
+		font-family: "OpenSansBold";
+	}
+	& .call{
+		font-size:12px;
+		font-family: "OpenSansLight";
+		text-transform: capitalize;
+	}
 }
 
 .stat__area{

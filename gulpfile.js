@@ -16,6 +16,11 @@ gulp.task("img",function(){
 		.pipe(gulp.dest("dist/img"));
 });
 
+gulp.task("fonts",function(){
+    return gulp.src("src/fonts/**/*/")
+        .pipe(gulp.dest("dist/fonts"));
+});
+
 gulp.task("js:own", function() {
 	return gulp.src("src/js/main.js")
 		.pipe(gulpif(isDevelopment,sourcemaps.init()))
@@ -83,5 +88,5 @@ gulp.task("watch",["build"],function(){
 	gulp.watch("dist/*.html").on("change",sync.reload);
 });
 
-gulp.task("build", ["html", "css", "js","img"]);
+gulp.task("build", ["html", "css", "js","img","fonts"]);
 gulp.task("default", ["build","watch"]);
