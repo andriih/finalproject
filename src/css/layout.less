@@ -2,8 +2,6 @@
  	margin: 0px;
  	padding: 0px;
  	box-sizing: border-box;
-// 	border: @border1;
-// 	color:white;
  }
 
 
@@ -13,14 +11,23 @@
 	width: @width;
 	margin: 0 auto;
 }
+/////header////////////
 .header__area{
 	height: 838px;
 	background-image: url('../img/header-bgc.png');
 	background-size:100% 100%;
 }
+.nav_menu{
+	height: 104px;
+	line-height: 104px;
+}
+
 .navbar__wrapper{
 	width:@content-width;
 	height:104px;
+}
+.logo{
+	margin-top: 19px;
 }
 .logo-txt{
 	font-family:"BebasNeueBold";
@@ -30,25 +37,30 @@
 	font-size:20px;
 }
 .agency__header{
+	margin-top:116px;
+	font-family:"OpenSansBold";
+	font-size:29px;
 	text-transform: uppercase;
 	color: white;
-	text-align: center;
 	border-bottom: 0px;
 }
 .agency__header__sub{
 	color: white;
-	text-align: center;
+	font-family:"OpenSansLight";
+	font-size:13px;
 }
 .contact__wrapper{
+	display: block;
 	color: white;
 	& .number{
+		color: white;
 		font-size:19px;
 		font-family: "OpenSansBold";
 	}
 	& .call{
+		color: white;
 		font-size:12px;
 		font-family: "OpenSansLight";
-		text-transform: capitalize;
 	}
 }
 .carousel__area{
@@ -60,10 +72,14 @@
 }
 //////////////FLAG
  .flag {
-	 width: 10px;
-	 height: 10px;
-	 background: red;
-	 display: inline-block;
+	 position: relative;
+	 z-index: 1;
+	 border: 15px solid #33b4fc;
+	 width: 20px;
+	 border-bottom: 20px solid transparent;
+	 margin-bottom: -3px;
+
+
  }
 
 .stat__area{
@@ -77,13 +93,14 @@
 	& .agency__header{
 		text-transform: uppercase;
 		color: #333333;
-		text-align: center;
+
 		border-bottom: 0px;
 	}
 
 	& .company__stat{
 		width: 220px;
 		&__header{
+
 			display: block;
 			border-bottom: 2px solid #333333;
 		}
