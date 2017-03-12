@@ -10,33 +10,26 @@
       color:white;
      // padding-bottom:;
       &:hover{
-        border-bottom: 1px solid #33b4fc;
+        border-bottom: 1px solid @blue-color;
       }
     }
   }
 }
 
-//.Menu{
-//  &-list{
-//    margin: 0;
-//    padding: 0;
-//    list-style: none;
-//  }
-//  &-item{
-//    display: inline-block;
-//    margin-right: 40px;
-//  }
-//  &-link{
-//  	display: inline-block;
-//  	height: 90px;
-//  	text-align: center;
-//  	text-decoration: none;
-//
-//  	&:after{
-//  	content: "";
-//   	display: inline-block;
-//   	vertical-align: middle;
-//   	height: 100%;
-//  	}
-//  }
-//}
+.Menu-list-grey{
+  list-style-type: none;
+  & li {
+    display: inline-block;
+    padding: 0 40px;
+    & a{
+      display: block;
+      font-family: "OpenSansLight";
+      text-decoration: none;
+      color:@grey;
+      // padding-bottom:;
+      &:hover{
+        border-bottom: 1px solid @blue-color;
+      }
+    }
+  }
+}

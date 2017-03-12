@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Title</title>
 	<link rel="stylesheet" href="/css/vendor.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<!--<link rel="stylesheet" href="/css/bootstrap.css">-->
 </head>
 <body>
-
+									<!------------------------------------HEADER area--------------->
 	<header class="header__area ">
 		<nav class="nav_menu">
 			<div class="container">
@@ -30,7 +31,7 @@
 						</ul>
 					</div>
 
-								<div class="contact__wrapper pull-right">
+								<div class="hidden-xs contact__wrapper pull-right">
 									<a href="index.html" class="navbar-brand logo ">
 										<p class="number ">
 											<img src="img/phone-icon.png" alt="phone">
@@ -59,48 +60,63 @@
                         </div>
                         </div>
                     </div>
-		<!-- CARUSEL -->
+		<!--////////////////////////////////////// CARUSEL////////////////////////////// -->
+		<div class="container carousel__area">
+			<div class="row">
+				<div class="carousel slide carusel__main" id="myCarousel">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+						<li  data-slide-to="1" data-target="#myCarousel"></li>
+						<li  data-slide-to="2" data-target="#myCarousel"></li>
+					</ol>
+					<!-- Slides -->
 
-				<div id="carousel-example-generic" class="carousel slide col-lg-4  carousel__area" data-ride="carousel">
-				  <div class="indicators">
-				  	<!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
+					<div class="carousel-inner">
+						<div class="item active" id="slide1">
+							<div class="row ">
+									<div class="shape  vcenter text-center">
+										<p>Simple text Simple text </p>
+										<h4>ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ!</h4>
+										<p>Simple text Simple text Simple text Simple text </p>
+									</div>
+							</div>
+						</div>
 
-				  </div>
+						<div class="item" id="slide2">
+								<div class="row vcenter">
 
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active">
-				      <img src="http://lorempixel.com/400/200" alt="...">
-				      <div class="carousel-caption">
-				        ...
-				      </div>
-				    </div>
+											<div class="shape text-center ">
+												<p>Simple text Simple text </p>
+												<h4>ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ!</h4>
+												<p>Simple text Simple text Simple text Simple text </p>
+											</div>
+								</div>
+						</div>
 
-				    <div class="item">
-				      <img src="http://lorempixel.com/400/200" alt="...">
-				      <div class="carousel-caption">
-				        ...
-				      </div>
-				    </div>
-				    ...
-				  </div>
+						<div class="item" id="slide3">
+							<div class="row  vcenter">
 
-				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
-				    </span>
-				    <span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				  </a>
+									<div class="shape text-center ">
+										<p>Simple text Simple text </p>
+										<h4>ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ!</h4>
+										<p>Simple text Simple text Simple text Simple text </p>
+									</div>
+
+							</div>
+					</div>
+					<!--Controls-->
+
+					<a class="vcenter left carousel-control " href="#myCarousel" data-slide="prev">
+						<img class="arrow-left" src="img/arrow-left.png" alt="">
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<img class="vcenter " src="img/arrow-right.png" alt="">
+					</a>
+
 				</div>
+			</div>
+		</div>
+
 	</header>
 									<!------------------------------------STAT area--------------->
 	<nav class="container-fluid stat__area">
@@ -111,47 +127,40 @@
 				</div>
 			</div>
 		<div class="row text-center">
-			<div class="col-md-2 col-md-offset-1">
+			<div class="col-md-2 col-md-offset-1 ">
 				<h3 class="company__stat__header ">
 					15 лет
-					<div class="flag block-center"></div>
 				</h3>
+						<div class="center-block flag"></div>
 					<p>
 						Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
 					</p>
 			</div>
 			<div class="col-md-2">
 				<h3 class="company__stat__header">15 лет</h3>
-				<div class="block-center">
-					<img src="img/line.svg" alt="">
-				</div>
+				<div class="center-block flag"></div>
 				<p>
 					Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
 				</p>
 			</div>
 			<div class="col-md-2">
 				<h3 class="company__stat__header">15 лет</h3>
-				<div class="block-center">
-					<img src="img/line.svg" alt="">
-				</div>
+
+				<div class="center-block flag"></div>
 				<p>
 					Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
 				</p>
 			</div>
 			<div class="col-md-2">
 				<h3 class="company__stat__header">15 лет</h3>
-				<div class="block-center">
-					<img src="img/line.svg" alt="">
-				</div>
+				<div class="center-block flag"></div>
 				<p>
 					Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
 				</p>
 			</div>
 			<div class="col-md-2">
 				<h3 class="company__stat__header">15 лет</h3>
-				<div class="block-center">
-					<img src="img/line.svg" alt="">
-				</div>
+				<div class="center-block flag"></div>
 				<p>
 					Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
 				</p>
@@ -159,34 +168,47 @@
 		</div>
 	</nav>
 
-	<div class="advantage__wrapper ">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="advantage__wrapper__area col-lg-8">
-				<div class="page-header agency__header container">
-					<h1>преимущества компании</h1>
-					<div class="block-center">
-						<img src="img/line.svg" alt="">
+			<div class="advantage__area">
+
+				<!----------------------------------------------ADVANTEGE HEADER-------------------------------------->
+				<div class="container">
+					<div class="row">
+						<div class=" col-md-8 col-md-offset-2 text-center">
+							<div class="agency__header ">
+								<h1>преимущестра компании</h1>
+								<div class="img-responsive">
+									<img src="img/line.svg" alt="">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
-
-				<div class="container case__wrapper text-center">
+				<div class="container case__wrapper text-center ">
 					<div class="row center">
-						<div class="col-lg-4 case__wrapper__item">
-							<div class="block-center">
-								<img src="img/clock-icon.png" alt="">
-							</div>
-							<p>
+						<div class="col-xs-12 col-sm-12 col-md-4">
+							<div class="case__wrapper__item">
+								<div class="block-center">
+									<img src="img/clock-icon.png" alt="">
+								</div>
+								<p>
 								экономия времени
-							</p>
-							<div class="block-center">
-								<img src="img/line.svg" alt="">
+								</p>
+								<div class="addition">
+									<div class="block-center">
+										<img src="img/line.svg" alt="">
+									</div>
+									<p>
+									Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
+									</p>
+								</div>
 							</div>
-							<p>
-								Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
-							</p>
 						</div>
-						<div class="col-lg-4 case__wrapper__item">
+
+						<div class="col-xs-12 col-sm-12 col-md-4 ">
+							<div class="case__wrapper__item">
 							<div class="block-center">
 								<img src="img/case-icon.png" alt="">
 							</div>
@@ -202,89 +224,165 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-4 case__wrapper__item">
-							<div class="block-center">
-								<img src="img/sheet-icon.png" alt="">
-							</div>
-							<p>
-								экономия времени
-							</p>
-							<div class="addition">
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-4 ">
+							<div class="case__wrapper__item">
 								<div class="block-center">
-									<img src="img/line.svg" alt="">
+									<img src="img/sheet-icon.png" alt="">
 								</div>
 								<p>
-									Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
+									экономия времени
 								</p>
+								<div class="addition">
+									<div class="block-center">
+										<img src="img/line.svg" alt="">
+									</div>
+									<p>
+										Мы занимаемся недвижимостью 15 лет, мы заинтересованы в помощи клиентам
+									</p>
+								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+									<!------------------------------------NEWS area--------------->
+	<div class="container-fluid news__area">
+		<div class="container">
+			<div class="row news__wrapper">
 
+				<div class="col-md-8 news1  ">
+					<h3>Разыгрываем новую квартиру!</h3>
+					<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
+						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
+						обладателем пятикомнотной квартиры в г.Минске по адресу: пр-т Роккоссовского, 49-1
+						Для участия в розыгрыше тебе необходимо купить другую пятикомнатную квартиру
+						в г.Минске по любому адресу, но в кратчайшие сроки! </p>
+						<p class="pull-left">22.10.2015</p>
+					<a href="№" class="pull-right">Подробниее</a>
+
+				</div>
+				<div class="col-md-4 news2 center-block">
+					<h2>новости</h2>
+				</div>
+
+				<div class="col-md-4 news3 pull-right">
+
+				</div>
+
+				<div class="col-md-3 news4"><h3>Разыгрываем новую квартиру!</h3>
+					<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
+						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
+						обладателем пятикомнотной квартиры в г.Минске по адресу: пр-т Роккоссовского, 49-1
+						Для участия в розыгрыше тебе необходимо купить другую пятикомнатную квартиру
+						в г.Минске по любому адресу, но в кратчайшие сроки! </p>
+					<p class="pull-left">22.10.2015</p>
+					<a href="№" class="pull-right">Подробниее</a>
+				</div>
+				<div class="col-md-5 news5">
+					<h3>Разыгрываем новую квартиру!</h3>
+					<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
+						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
+						обладателем пятикомнотной квартиры в г.Минске по адресу: пр-т Роккоссовского, 49-1
+						Для участия в розыгрыше тебе необходимо купить другую пятикомнатную квартиру
+						в г.Минске по любому адресу, но в кратчайшие сроки! </p>
+					<p class="pull-left">22.10.2015</p>
+					<a href="№" class="pull-right">Подробниее</a>
+				</div>
+
+				<div class="col-md-5 news5">
+					<h3>Разыгрываем новую квартиру!</h3>
+					<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
+						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
+						обладателем пятикомнотной квартиры в г.Минске по адресу: пр-т Роккоссовского, 49-1
+						Для участия в розыгрыше тебе необходимо купить другую пятикомнатную квартиру
+						в г.Минске по любому адресу, но в кратчайшие сроки! </p>
+					<p class="pull-left">22.10.2015</p>
+					<a href="№" class="pull-right">Подробниее</a>
+				</div>
+				<div class="col-md-3 news4">
+					<h3>Разыгрываем новую квартиру!</h3>
+					<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
+						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
+						обладателем пятикомнотной квартиры в г.Минске по адресу: пр-т Роккоссовского, 49-1
+						Для участия в розыгрыше тебе необходимо купить другую пятикомнатную квартиру
+						в г.Минске по любому адресу, но в кратчайшие сроки! </p>
+					<p class="pull-left">22.10.2015</p>
+					<a href="№" class="pull-right">Подробниее</a></div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid news__wrapper ">
-		<div class="news__wrapper__area">
-				<div class="col-lg-8 news1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad et hic inventore itaque laborum, laudantium? Aliquam dolorem, dolorum exercitationem maiores maxime officiis porro? Cum cupiditate fuga placeat praesentium soluta veritatis.</div>
-			</div>
-			<div class="col-lg-4 news2"><p>НОВОСТИ</p></div>
-			<div class="col-lg-5 news3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, voluptates.</div>
-			<div class="col-lg-3 news4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, suscipit.</div>
+<!-- -------------------------------------------------FOOTER -->
 
-			<div class="col-lg-4 news5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis ea ipsa iste iure quia quibusdam sint? Autem, incidunt voluptate. At, dolor dolores excepturi, facilis fuga ipsum iure magnam officia officiis quod, repellendus saepe? Adipisci, assumenda consectetur deserunt dolore dolores doloribus ducimus earum eius ipsam itaque iusto labore magni molestias nemo nesciunt praesentium, quis reiciendis ullam unde velit, vero vitae voluptatibus voluptatum. Ab aliquam asperiores at blanditiis delectus dolores fuga, labore laudantium magni maiores mollitia nesciunt nobis officiis pariatur quae quod rerum soluta sunt unde vitae! At aut blanditiis, debitis, ea maiores nulla obcaecati pariatur quam quas repudiandae similique, veniam?</div>
-		<div class="clearfix visible-xs-block"></div>
-		<div class="col-lg-3 news4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, voluptates.</div>
-		<div class="col-lg-5 news3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, suscipit.</div>
-	</div>
-
-	<!-- footer navbar -->
-
-
-<div class="container-fluid">
-	<div class="col-lg-12">
-
-		<div class="row ">
-			<div class="col-lg-12 col-lg-offset-2  navbar__wrapper">
-				<a class="navbar-brand col-lg-1" href="#">
-					<img src="img/grey-logo.svg" alt="">
-					<p class="logo-txt">your logo</p>
-				</a>
-				<div class="nav navbar-nav col-lg-6 col-md-4">
-					<nav class="Menu">
-						<ul class="Menu-list ">
-							<li class="Menu-item"><a href="#" class="Menu-link">главная</a></li>
-							<li class="Menu-item"><a href="#" class="Menu-link">o нас</a></li>
-							<li class="Menu-item"><a href="#" class="Menu-link">контакты</a></li>
+<footer class="footer__area">
+	<div class="container-fluid">
+		<nav class="nav_menu">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#bottom_menu">
+							menu
+						</button>
+						<a href="index.html" class="navbar-brand logo">
+							<img src="img/logo-icon.svg" alt="logo">
+							<p class="logo-txt-grey">your logo</p>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-left" id="bottom_menu">
+						<ul class="Menu-list-grey">
+							<li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
+							<li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
+							<li class="Menu-item"><a href="#" class="Menu-link">Контакты</a></li>
 						</ul>
-					</nav>
-				</div>
+					</div>
 
-				<div class="contact__wrapper col-lg-2 ">
-					<p class="number">
-						<img src="img/phone-icon.png" alt="phone">
-						8029 888 08 80
+					<div class="hidden-xs contact__wrapper pull-right">
+						<a href="index.html" class="navbar-brand logo ">
+							<p class="number-grey">
+								<img src="img/target-icon.png" alt="phone-grey">
+								Написать нам
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container-fluid footer__wrapper ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 pull-left">
+					<img src="img/target-icon.png" alt="phone-grey">
+					<p>
+						пл. Ленина, дом 52, офис 114,
+						ст. м. Ленина, Октябрьская
+						220030, Минск, Беларусь
 					</p>
-					<P class="call">Заказать звонок</P>
+					<p>
+						© АН "хххххх", 2004-08
+						создание сайта site.com
+					</p>
 				</div>
-
+				<div class="col-md-2 pull-right">
+					<img src="img/phone-icon.png" alt="phone-grey">
+					<p>
+						<span>8029 888 08 80</span>
+						<span>8029 888 08 80</span>
+						<span>8029 888 08 80</span>
+						<span>8029 888 08 80</span>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
+</footer>
 
-<!-- FOOTER -->
-
-<div class="footer__navbar col-xs-12 footer__wrapper">
-	<div class="row">
-		<div class="col-xs-6">text</div>
-		<div class="col-xs-6">text</div>
-	</div>
-
-</div>
 
 
 <!-- scripts -->
