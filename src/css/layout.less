@@ -198,20 +198,23 @@
 	height: 160px;
 	background-color: @grey;
 	color:white;
+	position: relative;
 
+	& .location{
 
+		& img{
+			display:inline-block;
+		}
+	}
 
 	& .numbers{
-		.border-1px();
-		& img{
-			.border-1px();
-		}
-		&__item{
-			& ul{
-				list-style-type:none;
-				.border-1px();
-			}
-		}
 
+
+		& ul{
+			list-style-type:none;
+		}
+		& img{
+			display:inline-block;
+		}
 	}
 }
