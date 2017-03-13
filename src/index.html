@@ -68,8 +68,8 @@
                         </div>
                     </div>
 		<!-- -------------------------------------- CARUSEL ------------------------------- -->
-		<div class="container-fluid carousel__area ">
-			<div class="row carousel__wrapper">
+		<div class="container carousel__area ">
+			<div class="row carousel__wrapper center-block">
 				<div class="carousel slide carusel__main" id="myCarousel">
 					<ol class="carousel-indicators">
 						<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
@@ -80,7 +80,7 @@
 
 					<div class="carousel-inner">
 						<div class="item active" id="slide1">
-							<div class="row item__centered center-block text-center">
+							<div class="row item__centered col-xs-12 center-block text-center">
 									<div class="shape text-center">
 										<p>Simple text Simple text </p>
 										<h4>ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ!</h4>
@@ -178,7 +178,7 @@
 			<div class="advantage__area">
 
 				<!----------------------------------------------ADVANTEGE HEADER------------------------------------ -->
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class=" col-md-8 col-md-offset-2 text-center">
 							<div class="agency__header ">
@@ -259,7 +259,7 @@
 		<div class="container">
 			<div class="row news__wrapper">
 
-				<div class="col-md-8 news1  ">
+				<div class="col-md-8  news1  ">
 					<h3>Разыгрываем новую квартиру!</h3>
 					<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
 						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
@@ -270,7 +270,7 @@
 					<a href="№" class="pull-right">Подробниее</a>
 
 				</div>
-				<div class="col-md-4 news2 center-block">
+				<div class="col-md-4 col-xs-12 news2 center-block">
 					<h2>новости</h2>
 				</div>
 
@@ -321,23 +321,30 @@
 		</div>
 	</div>
 
-<!-- -------------------------------------------------FOOTER -->
+<!-- -------------------------------------------------FOOTER---------------------------------------- -->
 
 <footer class="footer__area">
-	<div class="container-fluid">
+	<div class="container">
 		<nav class="nav_menu">
 			<div class="container">
 				<div class="row">
-					<div class="navbar-header">
-						<button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#bottom_menu">
-							menu
-						</button>
-						<a href="index.html" class="navbar-brand logo">
-							<img src="img/logo-icon.svg" alt="logo">
-							<p class="logo-txt-grey">your logo</p>
-						</a>
-					</div>
-					<div class="collapse navbar-collapse navbar-left" id="bottom_menu">
+						<div class="navbar-header ">
+							<button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#top_menu">
+								<span class="btn__link">
+									
+								</span>
+							</button>
+
+							<div class="logo__wrapper">
+								<a href="index.html" class="navbar-brand logo">
+								<img src="img/logo-icon.svg" alt="logo">
+								<p class="logo-txt-grey">your logo</p>
+							</a>
+							</div>
+
+							
+						</div>
+					<div class="collapse navbar-collapse navbar-left text-center" id="top_menu">
 						<ul class="Menu-list-grey">
 							<li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
 							<li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
@@ -345,19 +352,22 @@
 						</ul>
 					</div>
 
-					<div class="hidden-xs contact__wrapper pull-right">
-						<a href="index.html" class="navbar-brand logo ">
-							<p class="number-grey">
-								<img src="img/target-icon.png" alt="phone-grey">
-								Написать нам
-							</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
+								<div class="hidden-xs contact__wrapper pull-right">
+									<a href="index.html" class="navbar-brand logo ">
+										<p class="number-grey">
+											<img src="img/sheet-small-icon.png" alt="phone">
+											8029 888 08 80
+										</p>
+										<P class="call">Заказать звонок</P>
+										</a>
+								</div>
+                            </div>
+                        </div>
+                    </nav>
 
+	</div>
+		
+		<!-- ---------------------footer wrapper--------------------------------- -->
 	<div class="container-fluid footer__wrapper ">
 		<div class="container">
 			<div class="row">
