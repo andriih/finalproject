@@ -1,1 +1,1 @@
-$(".carousel").carousel(),$(".parallax-window").parallax({imageSrc:"../img/header-bgc.png"});
+$(".carousel").carousel();

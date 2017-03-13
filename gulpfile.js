@@ -32,6 +32,7 @@ gulp.task("js:own", function() {
 gulp.task("js:vendor", function() {
 	return gulp.src([
 		"node_modules/jquery/dist/jquery.js",
+        "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
 		"node_modules/bootstrap/dist/js/bootstrap.js",
 		"node_modules/toastr/build/toastr.min.js"
 		])

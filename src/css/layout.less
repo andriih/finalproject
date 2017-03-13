@@ -198,22 +198,20 @@
 	height: 160px;
 	background-color: @grey;
 	color:white;
-	.footer__items{
-		padding-top: 50px;
-	}
 
-	& .location{
-		& img{
-			display: inline-block;
-			margin: 0;
-		}
-	}
+
+
 	& .numbers{
+		.border-1px();
 		& img{
-			display: inline-block;
-			margin: 0;
+			.border-1px();
+		}
+		&__item{
+			& ul{
+				list-style-type:none;
+				.border-1px();
+			}
 		}
 
-		
 	}
 }
