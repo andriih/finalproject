@@ -1,4 +1,5 @@
-// $(document).ready(function() {
-// 	toastr.success("All right! reloaded !!!");
-// });
-$('.carousel').carousel();
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});

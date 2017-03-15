@@ -9,7 +9,7 @@
 @blue-color : #33b4fc;
 
 .border-1px(){
-	border:@border1;
+	border: 0;
 }
 
 .bgc-img-fullscreen(@url){
@@ -20,16 +20,6 @@
 .news-area-conf(@area-width){
 	.news__area{
 		height: @area-width;
-			
-			& .news2{
-				height: 100px;
-				text-align: center;	
-			}
-			
-	
-		& .news1 ,& .news3,& .news4 ,& .news5{
-			display: none;
-		}
 	}
 
 }
@@ -50,8 +40,3 @@
 	}
 }
 
-.footer-area-disp(){
-	.footer__area{
-		display: none;
-	}
-}

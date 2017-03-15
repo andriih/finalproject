@@ -34,6 +34,8 @@ gulp.task("js:vendor", function() {
 		"node_modules/jquery/dist/jquery.js",
         "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
 		"node_modules/bootstrap/dist/js/bootstrap.js",
+		"node_modules/imagesloaded/imagesloaded.js",
+		"node_modules/masonry-layout/dist/masonry.pkgd.js",
 		"node_modules/toastr/build/toastr.min.js"
 		])
 		.pipe(concat("vendor.js"))

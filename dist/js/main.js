@@ -1,1 +1,1 @@
-$(".carousel").carousel();
+$(".grid").masonry({itemSelector:".grid-item",columnWidth:".grid-sizer",percentPosition:!0});
