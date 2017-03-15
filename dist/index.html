@@ -9,7 +9,7 @@
 	<!--<link rel="stylesheet" href="/css/bootstrap.css">-->
 </head>
 <body>
-									<!------------------------------------HEADER area------------- -->
+									<!------------------------------------HEADER area------------------------------------ -->
 	<header class="header__area parallax-window">
 		<nav class="nav_menu">
 			<div class="container">
@@ -23,7 +23,7 @@
 
 							<div class="logo__wrapper">
 								<a href="index.html" class="navbar-brand logo">
-								<img src="img/logo-icon.svg" alt="logo">
+								<img src="img/logo-white.png" alt="logo">
 								<p class="logo-txt">your logo</p>
 							</a>
 							</div>
@@ -39,13 +39,37 @@
 					</div>
 
 								<div class="hidden-xs contact__wrapper pull-right">
-									<a href="index.html" class="navbar-brand logo">
-										<p class="number ">
-											<img src="img/phone-icon.png" alt="phone">
-											8029 888 08 80
-										</p>
-										<P class="call">Заказать звонок</P>
+										<a href="index.html" class="navbar-brand logo">
+											<p class="number ">
+												<img src="img/phone-icon.png" alt="phone">
+												8029 888 08 80
+											</p>
 										</a>
+									<p><button type="button" class="btn btn-link call" data-toggle="modal" data-target="#myModal">Заказать звонок</button></p>
+
+
+
+
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+													<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--END Modal -->
+
 								</div>
                             </div>
                         </div>
@@ -121,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-
+	</div>
 	</header>
 									<!------------------------------------STAT area------------- -->
 	<nav class="container-fluid stat__area">
@@ -301,7 +325,7 @@
 			<div class="container-fluid">
 				<div class="row">
 						<div class="navbar-header ">
-							<button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#top_menu">
+							<button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#bottom_menu">
 								<span class="btn__link">
 									
 								</span>
@@ -316,7 +340,7 @@
 
 							
 						</div>
-					<div class="collapse navbar-collapse navbar-left text-center" id="top_menu">
+					<div class="collapse navbar-collapse navbar-left text-center" id="bottom_menu">
 						<ul class="Menu-list-grey">
 							<li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
 							<li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
@@ -377,6 +401,9 @@
 </footer>
 
 <!-- ----------------------------MODALS-------------------------- -->
+
+
+
 
 <!-- scripts -->
 <script src="/js/vendor.js"></script>

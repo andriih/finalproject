@@ -29,6 +29,8 @@
 	width:@content-width;
 	height:104px;
 }
+
+
 .logo{
 	margin-top: 19px;
 }
@@ -60,19 +62,29 @@
 	font-size:13px;
 }
 .contact__wrapper{
-	display: block;
+	display:inline-block;
 	color: white;
+
+
 	& .number{
-		color: white;
+		color: #fff;
 		font-size:19px;
 		font-family: "OpenSansBold";
 	}
 	& .call{
+		padding: 0;
+		margin-top:-80px;
+		margin-left: 80px;
 		color: white;
 		font-size:12px;
 		font-family: "OpenSansLight";
+
+		&:focus{
+			border: 0px;
+		}
 	}
 }
+
 .carousel__area{
 	margin-top: 100px;
 	border: 1px solid black;
