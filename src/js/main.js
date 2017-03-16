@@ -2,10 +2,10 @@ $(window).scroll(function(){
 	var st  = $(this).scrollTop();
 
 	$('.parallax__area__title').css({
-		"transform":"translate(0%, "+st / 8+"%"
+		"transform":"translate(0%, "+st / 6+"%"
 	});
 	$('.parallax__area__carousel').css({
-		"transform":"translate(0%, "+st / 2 +"%"
+		"transform":"translate(0%, "+st / 5 +"%"
 	});
 });
 
