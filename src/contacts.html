@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacts</title>
+	<link rel="stylesheet" href="/css/vendor.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+	<div class="container-fluid contacts__header">
+		<header >
+			<!-- -------------------------NAVBAR----------------------------------- -->
+			<div class="container">
+				<nav class="nav_menu">
+			<div class="container-fluid">
+				<div class="row">
+						<div class="navbar-header ">
+							<button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#bottom_menu">
+								<span class="btn__link">
+									
+								</span>
+							</button>
+
+							<div class="logo__wrapper">
+								<a href="index.html" class="navbar-brand logo">
+								<img src="img/logo-icon.svg" alt="logo">
+								<p class="logo-txt-grey">your logo</p>
+							</a>
+							</div>
+
+							
+						</div>
+					<div class="collapse navbar-collapse navbar-left text-center" id="bottom_menu">
+						<ul class="Menu-list-grey">
+							<li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
+							<li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
+							<li class="Menu-item"><a href="#" class="Menu-link">Контакты</a></li>
+						</ul>
+					</div>
+
+								<div class="hidden-xs contact__wrapper pull-right">
+										<a href="index.html" class="navbar-brand logo">
+											<p class="number-grey ">
+												<img src="img/phone-icon.png" alt="phone">
+												8029 888 08 80
+											</p>
+										</a>
+									<p><button type="button" class="btn btn-link call-grey" data-toggle="modal" data-target="#myModal">Заказать звонок</button></p>
+										
+
+									
+
+
+									<!-- -----------------------------Modal----------------------------- -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-dialog modal__wrapper" role="document">
+											<div class="modal-content modal__wrapper">
+
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												</div>
+
+												<div class="modal-body text-center">
+													<h4 class="modal-title">Оставьте свои данные, и мы свяжемся с Вами в течение 15 минут</h4>
+													<form>
+														<div class="form-group">
+															<input type="name" class="form-control"  placeholder="Ваше имя">
+														</div>
+														<div class="form-group">
+															<input type="email" class="form-control"  placeholder="Ваш емейл">
+														</div>
+														<div class="form-group">
+															<input type="phone" class="form-control"  placeholder="Ваш телефон">
+														</div>
+
+														<button type="submit" class="btn btn-default send__btn">Отправить</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+                            </div>
+                        </div>
+                    </div>
+		</header>
+	</div>
+
+	<div class="container-fluid main__area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="col-md-12">Адрес:</div>
+					<div class="col-md-12">Смотреть на карте</div>
+					<div class="col-md-12">Телефони</div>
+					<div class="col-md-12">E-mail:</div>
+					<div class="col-md-12">Ми в соцсетях:</div>
+				</div> 
+				<div class="col-md-8 col-sm-6">
+					
+						<div class="page-header contacts__header text-center">
+							<h1>Контакти</h1>
+							<div class="block-center">
+								<img src="img/line.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+
+	<!-- scripts -->
+<script src="/js/vendor.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
