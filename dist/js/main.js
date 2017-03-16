@@ -1,1 +1,1 @@
-$(".grid").masonry({itemSelector:".grid-item",columnWidth:".grid-sizer",percentPosition:!0});
+$(window).scroll(function(){var r=$(this).scrollTop();$(".parallax__area__title").css({transform:"translate(0%, "+r/8+"%"}),$(".parallax__area__carousel").css({transform:"translate(0%, "+r/2+"%"})}),$(".grid").masonry({itemSelector:".grid-item",columnWidth:".grid-sizer",percentPosition:!0});
