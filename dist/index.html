@@ -50,7 +50,7 @@
 
 
 
-									<!-- Modal -->
+									<!-- -----------------------------Modal----------------------------- -->
 									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 										<div class="modal-dialog modal__wrapper" role="document">
 											<div class="modal-content modal__wrapper">
@@ -78,8 +78,8 @@
 											</div>
 										</div>
 									</div>
-									<!--END Modal -->
-
+									<!-- ----------------END Modal----------------------------------------- -->
+ 
 								</div>
                             </div>
                         </div>
@@ -156,8 +156,7 @@
 			</div>
 		</div>
 	</div>
-	</header>
-									<!------------------------------------STAT area------------- -->
+	</header>								<!------------------------------------STAT area------------- -->
 	<nav class="container-fluid stat__area">
 			<div class="page-header agency__header text-center">
 				<h1>компания в цифрах</h1>
@@ -359,12 +358,46 @@
 					</div>
 
 								<div class="hidden-xs contact__wrapper pull-right">
-									<a href="index.html" class="navbar-brand logo ">
-										<p class="number-grey">
+									<a href="index.html" class="navbar-brand logo footer__link">
+										<p class="number">
 											<img src="img/sheet-small-icon.png" alt="phone">
-											Написать нам
 										</p>
 									</a>
+									<button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#myModal">Написать нам</button>
+										
+
+									
+
+
+									<!-- -----------------------------Modal----------------------------- -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-dialog modal__wrapper" role="document">
+											<div class="modal-content modal__wrapper">
+
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												</div>
+
+												<div class="modal-body text-center">
+													<h4 class="modal-title">Оставьте свои данные, и мы свяжемся с Вами в течение 15 минут</h4>
+													<form>
+														<div class="form-group">
+															<input type="name" class="form-control"  placeholder="Ваше имя">
+														</div>
+														<div class="form-group">
+															<input type="email" class="form-control"  placeholder="Ваш емейл">
+														</div>
+														<div class="form-group">
+															<input type="phone" class="form-control"  placeholder="Ваш телефон">
+														</div>
+
+														<button type="submit" class="btn btn-default send__btn">Отправить</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+
 								</div>
                             </div>
                         </div>
@@ -409,8 +442,6 @@
 	</div>
 
 </footer>
-
-<!-- ----------------------------MODALS-------------------------- -->
 
 
 
