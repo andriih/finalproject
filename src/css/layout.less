@@ -60,46 +60,57 @@ html,body {
 	 color: @grey;
  }
 
-.agency__header{
-	//margin-top:px;
-	font-family:"OpenSansBold";
-	font-size:40px;
-	text-transform: uppercase;
-	color: white;
-	border-bottom: 0px;
+ .agency__header{
+	 margin-top:116px;
+	 font-family:"OpenSansBold";
+	 font-size:29px;
+	 text-transform: uppercase;
+	 color: white;
+	 border-bottom: 0px;
+ }
+ .agency__header__sub{
+	 color: white;
+	 font-family:"OpenSansLight";
+	 font-size:13px;
+ }
 
-}
-.agency__header__sub{
-	& p{
-
-		color: white;
-		width: 100%;
-		font-family:"OpenSansLight";
-		font-size:24px;
-	}
-}
 .contact__wrapper{
 	display:inline-block;
 	color: white;
+	//text-align: right;
 
-
-	& .number{
-		color: #fff;
-		font-size:26px;
-		font-family: "OpenSansBold";
-	}
-	& .call{
-		padding: 0;
-		margin-top:-80px;
-		margin-left: 80px;
-		color: white;
-		font-size:22px;
-		font-family: "OpenSansLight";
-
-		&:focus{
-			border: 0px;
+	& .contact__wrapper__right{
+		& p{
+			display: block;
+			height: 30px;
+			text-align: right;
 		}
+
+		& .number{
+			color: #fff;
+			font-size:24px;
+			font-family: "OpenSansBold";
+
+			& .logo{
+				padding-right:0px;
+			}
+
+		}
+		& .call{
+			color: white;
+			font-size:22px;
+			font-family: "OpenSansLight";
+			margin: 0;
+			padding: 0;
+
+			&:focus{
+				border: 0px;
+			}
+		}
+
 	}
+
+
 }
 
 .carousel__area{
@@ -120,7 +131,7 @@ html,body {
 	 border-bottom: 20px solid transparent;
 	 margin-bottom: -3px;
  }
-
+///////////////////////////////////STAT AREA/////////////////////////
 .stat__area{
 	position: relative;
 	z-index: 1 ;
@@ -278,6 +289,7 @@ html,body {
 		margin: 0;
 		margin-top:30px;
 		padding: 0;
+		float: right;
 		text-align: justify;
 		width: 400px;
 
@@ -315,8 +327,15 @@ html,body {
 .footer__link{
 		//display: block;
 }
+ .vcenter {
+	 display: inline-block;
+	 vertical-align: middle;
+	 float: none;
+ }
 
-/* ---- grid ---- */
+
+
+ /* ---- grid ---- */
 .grid{
 	
 	margin-top: 104px;
@@ -333,27 +352,44 @@ html,body {
 		
 	  &.n0{
 		background: url('../img/news-bgc1.png');
-		color:white;
-		padding: 50px;
+		  .link-custom-row(white);
+
 	  }
 	  &.n1{
-		background-color: white;
+		  background-color: white;
+		  text-align: center;
+		  text-transform: uppercase;
+
+		  & p{
+			  position: absolute;
+			  top:40%;
+			  left:18%;
+
+			  font-family:"OpenSans-Bold";
+			  color: #252525;
+			  font-size: 48px;
+		  }
 
 	  }
 	  &.n2{
 		background: url('../img/news-bgc5.png');
+		  .link-custom-row(#252525);
 	  }
 	  &.n3{
 		background: url('../img/news-bgc4.png');
+		  .link-custom-row(white);
 	  }
 	  &.n4{
 		background: url('../img/news-bgc6.png');
+		  .link-custom-row(white);
 	  }
 	  &.n5{
 		background: url('../img/news-bgc4.png');
+		  .link-custom-row(white);
 	  }
 	  &.n6{
 		background: url('../img/news-bgc5.png');
+		  .link-custom-row(#252525);
 	  }
 
 	  &--height2 { height: 592px; }
