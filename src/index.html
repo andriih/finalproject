@@ -86,16 +86,16 @@
                         </div>
                     </nav>
 					
-                    <div class="container  parallax__area__title">
+                    <div class="container-fluid  parallax__area__title">
                         <div class="row">
-                            <div class=" col-md-8 col-md-offset-2 text-center">
+                            <div class=" col-md-8 col-md-offset-2 text-center ">
                                 <div class="agency__header ">
                                     <h1>агенция недвижимости</h1>
                                     <div class="img-responsive">
                                         <img src="img/line.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="agency__header__sub ">
+                                <div class="cotainer-fluid agency__header__sub">
                                     <p>Продажа житлового та житлового фонда сопровождение Cопровождение сделок купли-продажи недвижимості</p>
                                 </div>
                             </div>
@@ -209,14 +209,14 @@
 
 	<div class="container-fluid ">
 		<div class="row">
-			<div class="advantage__area">
+			<div class="advantage__area ">
 
 				<!----------------------------------------------ADVANTEGE HEADER------------------------------------ -->
-				<div class="container-fluid ">
+				<div class="container">
 					<div class="row">
-						<div class=" col-md-8 col-md-offset-2 text-center ">
-							<div class="agency__header ">
-								<h1>преимущестра компании</h1>
+						<div class=" col-md-8 col-md-offset-2 text-center">
+							<div class="agency__header">
+								<h1>преимущества компании</h1>
 								<div class="img-responsive ">
 									<img class="line-img" src="img/line.svg" alt="">
 								</div>
@@ -233,7 +233,8 @@
 									<img src="img/clock-icon.png" alt="">
 								</div>
 								<p>
-								экономия времени
+									Экономия<br/>
+									времени
 								</p>
 								<div class="addition">
 									<div class="center-block">
@@ -252,7 +253,8 @@
 								<img src="img/case-icon.png" alt="">
 							</div>
 							<p>
-								экономия времени
+								Гарантия<br/>
+								безопасности
 							</p>
 							<div class="addition">
 								<div class="center-block">
@@ -271,7 +273,8 @@
 									<img src="img/sheet-icon.png" alt="">
 								</div>
 								<p>
-									экономия времени
+									Проверенная<br/>
+									надежность
 								</p>
 								<div class="addition">
 									<div class="block-center">
@@ -300,7 +303,12 @@
 			    <div class="grid-item col-xs-12 col-sm-6 col-md-8">
 			      <!-- add inner element for column content -->
 			      <div class="grid-item-content n0">
-			      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, rem, maxime. Impedit delectus autem perspiciatis fugiat ea sunt dolorum nostrum voluptatum voluptatem voluptatibus reprehenderit quae, facere doloremque sapiente neque. Ut?</p>
+					  <h4>Разыгрываем новую квартиру!</h4>
+			      	<p>Розыгрыш пятикомнотной квартиры в г.Минске состоится 21 февраля 2016 года, в
+						прямом эфире по всем телеканалам страны. Не упусти свой шанс стать счастливым
+						обладателем пятикомнотной квартиры в г.Минске по адресу: пр-т Роккоссовского, 49-1
+						Для участия в розыгрыше тебе необходимо купить другую пятикомнатную квартиру
+						в г.Минске по любому адресу, но в кратчайшие сроки! </p>
 			      </div>
 			    </div>
 			    <div class="grid-item col-xs-12 col-sm-6 col-md-4 ">
@@ -371,7 +379,7 @@
 
 
 									<!-- -----------------------------Modal----------------------------- -->
-									<div class="modal fade" id="myModal__contacts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal fade modal__contacts" id="myModal__contacts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 										<div class="modal-dialog modal__wrapper" role="document">
 											<div class="modal-content modal__wrapper">
 
@@ -380,7 +388,7 @@
 												</div>
 
 												<div class="modal-body text-center">
-													<h4 class="modal-title">Оставьте свои данные, и мы свяжемся с Вами в течение 15 минут</h4>
+													<h4 class="modal-title">Есть вопрос? Спрашивайте!</h4>
 													<form>
 														<div class="form-group">
 															<input type="name" class="form-control"  placeholder="Ваше имя">
@@ -390,6 +398,9 @@
 														</div>
 														<div class="form-group">
 															<input type="phone" class="form-control"  placeholder="Ваш телефон">
+														</div>
+														<div class="form-group">
+															<textarea name="qustn" id="qustn" class="form-control" cols="30" rows="2" placeholder="Задайте вопрос "></textarea>
 														</div>
 
 														<button type="submit" class="btn btn-default send__btn">Отправить</button>
@@ -411,33 +422,45 @@
 		<div class="container footer__items">
 			<div class="row">
 
-				<div class="col-xs-4">
-					<div class="location">
-						<img class="img-responsive" src="img/target-icon.png" alt="phone-grey">
-						<p>
-							пл. Ленина, дом 52, офис 114,
-							ст. м. Ленина, Октябрьская
-							220030, Минск, Беларусь
-						</p>
-						<p>
-							© АН "хххххх", 2004-08
-							создание сайта site.com
-						</p>
+					<div class="col-xs-6 location">
+						<div class="img__middle">
+							<img class="img-responsive" src="img/target-icon.png" alt="phone-grey">
+						</div>
+
+						<div class="text__footer">
+							<p>
+								пл. Ленина, дом 52, офис 114,
+								ст. м. Ленина, Октябрьская
+								220030, Минск, Беларусь
+							</p>
+							<p>
+								© АН "хххххх", 2004-08
+								создание сайта <a href="index.html">site.com</a>
+							</p>
+						</div>
+
+
+
+					</div>
+					<div class="col-xs-6 numbers pull-right">
+
+						<div class="text__footer">
+							<ul >
+								<li>8029 888 08 80</li>
+								<li>8029 888 08 80</li>
+								<li>8029 888 08 80</li>
+								<li>8029 888 08 80</li>
+							</ul>
+						</div>
+						<div class="img__middle">
+								<img class="img-responsive" src="img/phone-icon.png" alt="phone-grey">
+							</div>
+
+
+
 					</div>
 
 				</div>
-				<div class="col-xs-4 col-xs-offset-4 text-right">
-
-					<div class="numbers">
-						<img class="img-responsive" src="img/phone-icon.png" alt="phone-grey">
-						<ul >
-							<li>8029 888 08 80</li>
-							<li>8029 888 08 80</li>
-							<li>8029 888 08 80</li>
-							<li>8029 888 08 80</li>
-						</ul>
-					</div>
-				</div>				
 			</div>
 		</div>
 	</div>

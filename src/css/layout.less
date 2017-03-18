@@ -48,31 +48,35 @@ html,body {
 	margin-top: 19px;
 }
 .logo-txt{
-	font-family:"BebasNeueBold";
-	text-transform: uppercase;
-	margin-top:17px;
-	color: white;
-	font-size:20px;
+
+	.logo-text-mx(white);
 }
  .logo-txt-grey{
-	 color: #333333;
+	 .logo-text-mx(#333333);
  }
+
  .number-grey{
-	 color: #333333;
+	 font-size:24px;
+	 color: @grey;
  }
 
 .agency__header{
-	margin-top:116px;
+	//margin-top:px;
 	font-family:"OpenSansBold";
-	font-size:29px;
+	font-size:40px;
 	text-transform: uppercase;
 	color: white;
 	border-bottom: 0px;
+
 }
 .agency__header__sub{
-	color: white;
-	font-family:"OpenSansLight";
-	font-size:13px;
+	& p{
+
+		color: white;
+		width: 100%;
+		font-family:"OpenSansLight";
+		font-size:24px;
+	}
 }
 .contact__wrapper{
 	display:inline-block;
@@ -81,7 +85,7 @@ html,body {
 
 	& .number{
 		color: #fff;
-		font-size:19px;
+		font-size:26px;
 		font-family: "OpenSansBold";
 	}
 	& .call{
@@ -89,7 +93,7 @@ html,body {
 		margin-top:-80px;
 		margin-left: 80px;
 		color: white;
-		font-size:12px;
+		font-size:22px;
 		font-family: "OpenSansLight";
 
 		&:focus{
@@ -112,6 +116,7 @@ html,body {
 	 margin-top: -12px;
 	 border: 15px solid @blue-color;
 	 width: 20px;
+	 height: 30px;
 	 border-bottom: 20px solid transparent;
 	 margin-bottom: -3px;
  }
@@ -126,18 +131,27 @@ html,body {
 
 	& .agency__header{
 		margin-top: 64px;
+		font-size:30px;
 		text-transform: uppercase;
 		color: #333333;
+		font-family:"OpenSansBold";
 		border-bottom: 0px;
 	}
 
 	& .company__stat{
 		width: 220px;
 		&__header{
-
+			font-size:30px;
 			display: block;
+			font-family:"OpenSansBold";
 			border-bottom: 2px solid #333333;
+
+			& p{
+				font-family:"OpenSansLight";
+				font-size:20px;
+			}
 		}
+
 	}
 }
 /////////ADVANTAGE///////////////////////
@@ -154,6 +168,8 @@ html,body {
 	
 	& .agency__header{
 		margin-top: 70px;
+		font-size:30px;
+		font-family:"OpenSansBold";
 		border-bottom: 0px;
 	}
 
@@ -162,18 +178,47 @@ html,body {
 
 		&__item{
 			display: inline-block;
-			margin-top:82px;
+			margin-top:60px;
+			font-family:"OpenSansLight";
+			font-size:24px;
 			width: 300px;
-			height: 130px;
+			height: 170px;
 			overflow: hidden;
+			padding: 0;
+			margin-right:0px;
 
 			&:hover{
+
 				display: inline-block;
+				font-family:"OpenSansLight";
+				color: #fff;
+				font-size:20px;
 				width: 300px;
 				height: 300px;
 				padding: 20px;
 				background-color: black;
-				opacity: 0.5;
+				opacity: 0.4;
+				position: relative;
+				z-index: 5;
+			}
+
+			& .addition{
+				margin-top:-15px;
+
+				& img{
+					margin-top:15px;
+					margin-bottom:45px;
+				}
+
+				& p{
+
+					padding: 0;
+					margin: 0;
+					margin-top:-20px;
+					font-size:18px;
+					opacity: 1;
+
+				}
 			}
 		}
 
@@ -198,25 +243,71 @@ html,body {
 	background-color: @grey;
 	color:white;
 	position: relative;
-	
+	margin: 0;
+	padding: 0;
+
 	
 
 	& .location{
+		margin: 0;
+		margin-top:30px;
+		padding: 0;
+		text-align: left;
+		width: 400px;
 
-		& img{
-			display:inline-block;
+		& .img__middle{
+			padding-top: 30px;
+			//padding-right:30px;
+			width: 60px;
+			float: left;
 		}
+		& .text__footer{
+			width: 270px;
+			float: left;
+
+			& a{
+				text-decoration: none;
+				color: @blue-color;
+			}
+		}
+
 	}
 
 	& .numbers{
+		height: 100%;
+		margin: 0;
+		margin-top:30px;
+		padding: 0;
+		text-align: justify;
+		width: 400px;
 
+		& .img__middle{
+			padding-top: 40px;
+			width: 30px;
+			margin-left:30px;
+			float: right;
+		}
+		& .text__footer{
+			vertical-align: middle;
+			height: 100%;
+			width: 100px;
+			float: right;
+
+
+		}
 
 		& ul{
 			list-style-type:none;
+
+			& li{
+				line-height: 2em;
+
+				&:nth-child(2n){
+					color:@blue-color;
+				}
+			}
 		}
-		& img{
-			display:inline-block;
-		}
+
 	}
 }
 
@@ -243,10 +334,11 @@ html,body {
 	  &.n0{
 		background: url('../img/news-bgc1.png');
 		color:white;
-		padding: 20px;
+		padding: 50px;
 	  }
 	  &.n1{
 		background-color: white;
+
 	  }
 	  &.n2{
 		background: url('../img/news-bgc5.png');
