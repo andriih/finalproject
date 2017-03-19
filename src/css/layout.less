@@ -12,7 +12,9 @@ html,body {
 	min-height: 100%;
 	margin-bottom: -160px;
 }
-
+ textarea {
+	 resize:none;
+ }
 ///////////////////////////////////////////////////////////////
 .fullwidth{
 	width: @width;
@@ -30,9 +32,9 @@ html,body {
     background-size: cover;
 
 }
-// .parallax__area__title{
-// 	margin-top: -300px;
-// }
+#email-error{
+	display: none;
+}
 .nav_menu{
 	height: 104px;
 	line-height: 104px;
@@ -69,6 +71,7 @@ html,body {
 	 border-bottom: 0px;
  }
  .agency__header__sub{
+
 	 color: white;
 	 font-family:"OpenSansLight";
 	 font-size:13px;
@@ -102,9 +105,10 @@ html,body {
 			font-family: "OpenSansLight";
 			margin: 0;
 			padding: 0;
-
+			border: 0px;
 			&:focus{
 				border: 0px;
+				line-height: 0px;
 			}
 		}
 

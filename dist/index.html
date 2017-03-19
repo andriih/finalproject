@@ -57,16 +57,21 @@
 
 												<div class="modal-body text-center">
 													<h4 class="modal-title">Оставьте свои данные, и мы свяжемся с Вами в течение 15 минут</h4>
-													<form>
+													<form novalidate="novalidate" name="header-form" action="#" id="header-form">
 														<div class="form-group">
-															<input type="name" class="form-control"  placeholder="Ваше имя">
+															<input type="text" name="name" id="name" class="form-control"  placeholder="Ваше имя">
+
 														</div>
 														<div class="form-group">
-															<input type="email" class="form-control"  placeholder="Ваш емейл">
+															<input type="email" name="email" class="form-control"  placeholder="Ваш емейл">
+
 														</div>
 														<div class="form-group">
-															<input type="phone" class="form-control"  placeholder="Ваш телефон">
+															<input type="text" name="number" class="form-control"  placeholder="Ваш телефон">
+
 														</div>
+
+
 
 														<button type="submit" class="btn btn-default send__btn">Отправить</button>
 													</form>
@@ -81,7 +86,7 @@
                         </div>
                     </nav>
 
-						<div class="container">
+						<div class="container parallax__area__title">
 							<div class="row">
 								<div class=" col-md-8 col-md-offset-2 text-center">
 									<div class="agency__header ">
@@ -426,16 +431,16 @@
 											<img src="img/sheet-small-icon.png" alt="phone">
 										</p>
 									</a>
-									<button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#myModal__contacts">Написать нам</button>
+									<button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#myModal__question">Написать нам</button>
 
 
 
 
 
 									<!-- -----------------------------Modal----------------------------- -->
-									<div class="modal fade modal__contacts" id="myModal__contacts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal fade modal__contacts" id="myModal__question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 										<div class="modal-dialog modal__wrapper" role="document">
-											<div class="modal-content modal__wrapper">
+											<div class="modal-content modal__wrapper modal__wrapper__footer">
 
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -443,21 +448,24 @@
 
 												<div class="modal-body text-center">
 													<h4 class="modal-title">Есть вопрос? Спрашивайте!</h4>
-													<form>
+													<form novalidate="novalidate" name="footer-form" action="#" id="footer-form">
 														<div class="form-group">
-															<input type="name" class="form-control"  placeholder="Ваше имя">
+															<input type="text" name="name" id="name-f" class="form-control"  placeholder="Ваше имя">
+
 														</div>
 														<div class="form-group">
-															<input type="email" class="form-control"  placeholder="Ваш емейл">
+															<input type="email" name="email" class="form-control"  placeholder="Ваш емейл">
+
 														</div>
 														<div class="form-group">
-															<input type="phone" class="form-control"  placeholder="Ваш телефон">
+															<input type="text" name="number" class="form-control"  placeholder="Ваш телефон">
+
 														</div>
 														<div class="form-group">
-															<textarea name="qustn" id="qustn" class="form-control" cols="30" rows="2" placeholder="Задайте вопрос "></textarea>
+															<textarea name="question" id="qustn" class="form-control" cols="30" rows="2" placeholder="Задайте вопрос "></textarea>
 														</div>
 
-														<button type="submit" class="btn btn-default send__btn">Отправить</button>
+														<button type="submit" class="btn btn-default send__btn btn__footer">Отправить</button>
 													</form>
 												</div>
 											</div>
