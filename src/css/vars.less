@@ -140,3 +140,32 @@
 		}
 	}
 }
+
+
+.top-menu-mixin(){
+	#top_menu{
+		position: relative;
+		z-index: 1;
+		margin: 0;
+		padding: 0;
+
+		& .Menu-list{
+			display: block;
+		}
+
+		& .Menu-item{
+			margin: 0;
+			padding: 0;
+			background-color: #1B242B;
+			display: block;
+			text-align: center;
+		}
+
+		& .Menu-link{
+			line-height:104px;
+			width: 100%	;
+			display: block;
+		}
+	}
+}
+
