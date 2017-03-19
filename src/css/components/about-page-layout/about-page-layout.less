@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about__header{
+  border-bottom:1px solid @blue-color;
+
+
+  .contact__wrapper{
+    display:inline-block;
+    color: white;
+    //text-align: right;
+
+    & .contact__wrapper__right{
+      & p{
+        display: block;
+        height: 30px;
+        text-align: right;
+      }
+
+      & .number{
+        color: @grey;
+        font-size:24px;
+        font-family: "OpenSansBold";
+
+        & .logo{
+          padding-right:0px;
+        }
+
+      }
+      & .call{
+        color: @grey;
+        font-size:22px;
+        font-family: "OpenSansLight";
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        &:focus{
+          border: 0px;
+          line-height: 0px;
+        }
+      }
+
+    }
+
+
+  }
+}

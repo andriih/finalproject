@@ -1,3 +1,4 @@
+
 $(window).scroll(function(){
 	var st  = $(this).scrollTop();
 
@@ -18,9 +19,13 @@ $('.grid').masonry({
 
 var headerForm = $("#header-form");
 
+$('.close').click(function(){
+    $("#header-form")[0].reset()
+    $("#footer-form")[0].reset();
+
+});
 
 ///HEADER FORM
-
 $("#header-form").validate({
     rules: {
         name: {
@@ -110,14 +115,11 @@ $("#footer-form").validate({
     },
     submitHandler: function(form) {
 
-        // $("#header-form").reset();
 
         toastr.success('Вопрос отправлен!');
         $("#footer-form")[0].reset();
         $('#myModal__question').removeClass('in').attr('style','display:none;');
         $(".modal-backdrop.fade.in").remove();
-
-
         $('body').removeAttr('class').removeAttr('style');
 
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/vendor.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!--HEADER-->
+
+        <header class="container__fluid about__header">
+                <div class="container">
+                    <nav class="nav_menu">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="navbar-header ">
+                                    <button class="navbar-toggle collapsed menu__btn" data-toggle="collapse" data-target="#about_menu_top">
+								<span class="btn__link">
+
+								</span>
+                                    </button>
+
+                                    <div class="logo__wrapper">
+                                        <a href="index.html" class="navbar-brand logo">
+                                            <img src="img/logo-icon.svg" alt="logo">
+                                            <p class="logo-txt-grey">your logo</p>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                                <div class="collapse navbar-collapse navbar-left text-center" id="about_menu_top">
+                                    <ul class="Menu-list-grey">
+                                        <li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
+                                        <li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
+                                        <li class="Menu-item"><a href="#" class="Menu-link">Контакты</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="hidden-xs contact__wrapper pull-right">
+                                    <div class="contact__wrapper__right">
+                                        <p class="number"><img src="img/phone-icon.png" alt="phone">8029 888 08 80</p>
+                                        <p ><button type="button" class="btn btn-link call" data-toggle="modal" data-target="#myModal">Заказать звонок</button></p>
+                                    </div>
+
+
+                                    <!-- -----------------------------Modal----------------------------- -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog modal__wrapper" role="document">
+                                            <div class="modal-content modal__wrapper">
+
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+
+                                                <div class="modal-body text-center">
+                                                    <h4 class="modal-title">Оставьте свои данные, и мы свяжемся с Вами в течение 15 минут</h4>
+                                                    <form novalidate="novalidate" name="header-form" action="#" id="header-form">
+                                                        <div class="form-group">
+                                                            <input type="text" name="name" id="name" class="form-control"  placeholder="Ваше имя">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" name="email" class="form-control"  placeholder="Ваш емейл">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" name="number" class="form-control"  placeholder="Ваш телефон">
+
+                                                        </div>
+
+
+
+                                                        <button type="submit" class="btn btn-default send__btn">Отправить</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ----------------END Modal----------------------------------------- -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+        </header>
+
+
+    </div>
+
+<!-- scripts -->
+<script src="/js/vendor.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
