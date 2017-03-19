@@ -5,10 +5,10 @@
 }
 
 .about__header{
-  border-bottom:1px solid @blue-color;
+  border-bottom:2px solid @blue-color;
 
 
-  .contact__wrapper{
+  & .contact__wrapper{
     display:inline-block;
     color: white;
     //text-align: right;
@@ -47,4 +47,83 @@
 
 
   }
+
+}
+
+& .tittle__area{
+  margin:0;
+  padding:0;
+  height: 369px;
+  background-image: url('../img/object-page/bg-arro-bubble.png');
+  background-size:100% 100%;
+   & .agency__header{
+    color: @grey;
+  }
+  & .agency__header__sub{
+    color: @grey;
+  }
+
+  & .middle__txt{
+    color: @grey;
+    margin-top: 30px;
+  }
+
+}
+& .map__area{
+  margin: 0;
+  padding: 0;
+  margin-top:30px;
+  height: 577px;
+}
+
+& .add__area{
+  margin: 0;
+  padding: 0;
+  height: 410px;
+
+ & .flat__types{
+
+   margin-top:65px;
+
+   & .types__list{
+     list-style-image: url('../img/object-page/house-icon.png');
+
+     &__item{
+       list-style-image: url('../img/object-page/house-icon.png');
+       margin-top:35px;
+       width:360px;
+     }
+   }
+
+ }
+}
+
+& .search__area{
+  margin:0;
+  padding:0;
+  height: 290px;
+  background-color:#33b4fc ;
+}
+
+& .result__area{
+  height: 3093px;
+  margin:0;
+  padding:0;
+  background-image: url('../img/object-page/big-bgc.png');
+  background-size:100% 100%;
+
+  & .result__wrapper{
+    height: 100%;
+    padding-bottom:215px;
+     background-color: #fff;
+
+    & .agency__header{
+      color: @grey;
+    }
+
+    & table{
+      width: 100%;
+    }
+   }
+
 }
