@@ -9,38 +9,52 @@ html,body{
 	margin-bottom: -160px;;
 }
 
-#myArrow {
-	width:200px;
-	height:100%;
-	position:relative;
-	border-bottom:1px solid #0099B4;
-}
 
-#myArrow:before {
-	content:"";
-	border-color: #FFF transparent transparent transparent;
-	border-style:solid;
-	border-width:12px;
-	width:0;
-	height:0;
-	position:absolute;
-	bottom:-23px;
-	left:45%;
-	z-index:1;
-}
+.about__header{
+	border-bottom:2px solid @blue-color;
 
-#myArrow:after {
-	content:"";
-	border-color: #0099B4 transparent transparent transparent;
-	border-style:solid;
-	border-width:12px;
-	width:0;
-	height:0;
-	position:absolute;
-	bottom:-24px;
-	left:45%;
-}
 
+	& .contact__wrapper{
+		display:inline-block;
+		color: white;
+		//text-align: right;
+
+		& .contact__wrapper__right{
+			& p{
+				display: block;
+				height: 30px;
+				text-align: right;
+			}
+
+			& .number{
+				color: @grey;
+				font-size:24px;
+				font-family: "OpenSansBold";
+
+				& .logo{
+					padding-right:0px;
+				}
+
+			}
+			& .call{
+				color: @grey;
+				font-size:22px;
+				font-family: "OpenSansLight";
+				margin: 0;
+				padding: 0;
+				border: 0px;
+				&:focus{
+					border: 0px;
+					line-height: 0px;
+				}
+			}
+
+		}
+
+
+	}
+
+}
 ///////////////////////////////////////
 
 .contacts__header{

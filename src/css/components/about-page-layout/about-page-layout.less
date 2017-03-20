@@ -53,20 +53,37 @@
 & .tittle__area{
   margin:0;
   padding:0;
-  height: 369px;
+  height: 240px;
   background-image: url('../img/object-page/bg-arro-bubble.png');
   background-size:100% 100%;
-   & .agency__header{
-    color: @grey;
-  }
-  & .agency__header__sub{
-    color: @grey;
+
+  & .brad__crambs{
+    font-family:"OpenSansLight";
+    font-size:18px;
+    & a{
+      color: @grey;
+    }
   }
 
-  & .middle__txt{
+   & .agency__header{
+     margin-top:60px;
     color: @grey;
-    margin-top: 30px;
+     font-size:30px;
+     font-family:"OpenSansBold";
+     & img {
+       margin-top:-40px;
+     }
   }
+
+
+  & .middle__txt{
+    //margin-top: px;
+    color: @grey;
+    font-family:"OpenSansLight";
+    font-size:18px;
+
+  }
+
 
 }
 
@@ -85,6 +102,8 @@
   //  border: 1px solid black;
   //}
   //& .col-md-4{
+  // // float: right;
+  //  //margin-right: 20px;
   //  border: 1px solid black;
   //}
 
@@ -170,6 +189,7 @@
     background-color: #ff4800;
     color: #fff;
     text-align: center;
+    border:0px;
   }
 }
 
@@ -254,66 +274,5 @@
 }
 
 
-@media only screen and (max-width : 1200px) {
 
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width : 320px) {
-  & .contact__wrapper{
-    display:inline-block;
-    color: white;
-    //text-align: right;
-
-    & .contact__wrapper__right{
-      & p{
-        display: block;
-        height: 30px;
-        text-align: right;
-      }
-
-      & .number{
-        color: @grey;
-        font-size:24px;
-        font-family: "OpenSansBold";
-
-        & .logo{
-          padding-right:0px;
-        }
-
-      }
-      & .call{
-        color: @grey;
-        font-size:22px;
-        font-family: "OpenSansLight";
-        margin: 0;
-        padding: 0;
-        border: 0px;
-        &:focus{
-          border: 0px;
-          line-height: 0px;
-        }
-      }
-
-    }
-
-
-  }
-}
 
