@@ -1,4 +1,5 @@
 
+
 $(window).scroll(function(){
 	var st  = $(this).scrollTop();
 
@@ -124,7 +125,7 @@ $("#footer-form").validate({
 
 $(document).ready(function() {
     $('#object-table').DataTable( {
-        "iDisplayLength": 30,
+        "iDisplayLength": 25,
         "autoWidth": true,
         "ajax": {
             "url": "/data/table-data.json",
