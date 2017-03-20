@@ -11,6 +11,11 @@ var sync = require("browser-sync").create();
 
 var isDevelopment = false;
 
+gulp.task("data",function(){
+    return gulp.src("src/data/**/*")
+        .pipe(gulp.dest("dist/data"));
+});
+
 gulp.task("img",function(){
     return gulp.src("src/img/**/*/")
         .pipe(gulp.dest("dist/img"));
@@ -38,7 +43,10 @@ gulp.task("js:vendor", function() {
         "node_modules/masonry-layout/dist/masonry.pkgd.js",
         "node_modules/toastr/build/toastr.min.js",
         "node_modules/jquery-validation/dist/jquery.validate.min.js",
-        "node_modules/jquery-validation/dist/additional-methods.js"
+        "node_modules/jquery-validation/dist/additional-methods.js",
+        "node_modules/datatables.net/js/jquery.dataTables.js",
+        "node_modules/datatables.net-bs/js/dataTables.bootstrap.js"
+
 
     ])
         .pipe(concat("vendor.js"))
@@ -50,7 +58,8 @@ gulp.task("js:vendor", function() {
 gulp.task("css:vendor", function() {
     return gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.css",
-        "node_modules/toastr/build/toastr.min.css"
+        "node_modules/toastr/build/toastr.min.css",
+        "node_modules/datatables.net-bs/css/dataTables.bootstrap.css"
     ])
         .pipe(gulpif(!isDevelopment,nano()))
         .pipe(concat("vendor.css"))
@@ -94,5 +103,5 @@ gulp.task("watch",["build"],function(){
     gulp.watch("dist/*.html").on("change",sync.reload);
 });
 
-gulp.task("build", ["html", "css", "js","img","fonts"]);
+gulp.task("build", ["html", "css", "js","img","fonts","data"]);
 gulp.task("default", ["build","watch"]);

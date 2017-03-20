@@ -114,15 +114,25 @@ $("#footer-form").validate({
         }
     },
     submitHandler: function(form) {
-
-
         toastr.success('Вопрос отправлен!');
         $("#footer-form")[0].reset();
         $('#myModal__question').removeClass('in').attr('style','display:none;');
         $(".modal-backdrop.fade.in").remove();
         $('body').removeAttr('class').removeAttr('style');
-
-
-
     }
 });
+
+$(document).ready(function() {
+    $('#object-table').DataTable( {
+        "ajax": {
+            "url": "/data/table-data.json",
+            "dataSrc": ""
+        },
+        "columns": [
+            { "data": "zip" },
+            { "data": "location" },
+            { "data": "rooms" }
+        ]
+    } );
+} );
+
