@@ -121,12 +121,44 @@
       color: @grey;
     }
     & .table-responsive{
+      //display: inline-block;
       margin: 0 66px 0 66px;
+      overflow-x: initial;
     }
     & table{
+      //margin: 0 auto;
+      width: 100%;
+      //clear: both;
+      //border-collapse: collapse;
+      //table-layout: fixed;
+      //word-wrap:break-word;
 
-      //margin-right: 63px;
-      //margin-left: 63px;
+      & .just{
+        & img{
+          padding-right:5px;
+          height: 30px;
+        }
+      }
+
+      & .code__color{
+        & span{
+          color:@blue-color;
+        }
+      }
+      & .rooms_color{
+        & span{
+          color:@blue-color;
+        }
+      }
+
+      & .price__btn{
+        & button{
+          margin-top: 5px;
+          color: @blue-color;
+          border: 1px solid @blue-color;
+          width: 190px;
+        }
+      }
     }
    }
 

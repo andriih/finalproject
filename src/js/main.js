@@ -124,15 +124,49 @@ $("#footer-form").validate({
 
 $(document).ready(function() {
     $('#object-table').DataTable( {
+        "iDisplayLength": 30,
+        "autoWidth": true,
         "ajax": {
             "url": "/data/table-data.json",
             "dataSrc": ""
         },
+
         "columns": [
-            { "data": "zip" },
-            { "data": "location" },
-            { "data": "rooms" }
+            { "data": "zip",
+                sClass: "code__color",
+                "render": function(data, type, row) {
+                    return '<p>Код: <span>'+data+'</span></p>';
+                }
+            },
+            { "data": "location",
+                "width": "20%",
+                "render": function(data, type, row) {
+                    return '<img src="img/object-page/location-icon.png" /> '+data;
+                }
+            },
+            { "data": "rooms",
+                sClass: "rooms_color",
+                "width": "20%",
+                "render": function(data, type, row) {
+                    return '<p>Комнат всего/разд: <span> 3/'+data+'</span></p>';
+                }
+            },
+            { "data": "buttons",
+                sClass: "just",
+                "width": "30%",
+                "render": function(data, type, row) {
+                    return '<a href="#"><img src="img/object-page/icon-chair.png" /></a><a href="#"><img src="img/object-page/tv-icon.png" /></a><a href="#"><img src="img/object-page/washing-icon.png" /></a><a href="#"><img src="img/object-page/fridge-icon.png" /></a><a href="#"><img src="img/object-page/metro-icon.png" /></a>';
+                }
+            },
+            { "data": "price",
+                sClass: "price__btn",
+                "width": "10%",
+                "render": function(data, type, row) {
+                    return '<img src="img/object-page/dollar-icon.png" /><span>100 000 $</span><p><button type="button" class="btn btn-default">Подробнее</button></p>';
+                }
+            }
         ]
     } );
 } );
+
 
