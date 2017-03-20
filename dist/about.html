@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="container-fluid">
+
         <!--HEADER-->
 
         <header class="container__fluid about__header">
@@ -34,9 +34,9 @@
                                 </div>
                                 <div class="collapse navbar-collapse navbar-left text-center" id="about_menu_top">
                                     <ul class="Menu-list-grey">
-                                        <li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
-                                        <li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
-                                        <li class="Menu-item"><a href="#" class="Menu-link">Контакты</a></li>
+                                        <li class="Menu-item"><a href="index.html" class="Menu-link">Главная</a></li>
+                                        <li class="Menu-item"><a href="about.html" class="Menu-link">О нас</a></li>
+                                        <li class="Menu-item"><a href="contacts.html" class="Menu-link">Контакты</a></li>
                                     </ul>
                                 </div>
 
@@ -134,45 +134,112 @@
 
         <!--  -----------------ADD AREA------------- -->
         <div class="container-fluid add__area">
-            <div class="container center-block " >
-                <div class="row ">
-                    <div class="col-md-4 flat__types">
-                        <ul class="types__list">
-                            <li class="types__list__item">Квартиры без мебели</li>
-                            <li class="types__list__item">Квартиры без мебели</li>
-                            <li class="types__list__item">Квартиры без мебели</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="col-md-4 flat__types">
-                            <ul class="types__list">
-                                <li class="types__list__item">Квартиры без мебели</li>
-                                <li class="types__list__item">Квартиры без мебели</li>
-                                <li class="types__list__item">Квартиры без мебели</li>
-                            </ul>
+
+                <div class="container center-block">
+                    <div class="col-md-8 col-md-offset-2 ">
+
+                        <div class="col-md-4 col-xs-12 ">
+                            <div class="flat__types">
+                                <ul class="types__list">
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4  col-xs-12">
+                            <div class="flat__types">
+                                <ul class="types__list">
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4  col-xs-12">
+                            <div class="flat__types">
+                                <ul class="types__list">
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                    <li class="types__list__item">Квартиры без мебели</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="col-md-4 flat__types">
-                            <ul class="types__list">
-                                <li class="types__list__item">Квартиры без мебели</li>
-                                <li class="types__list__item">Квартиры без мебели</li>
-                                <li class="types__list__item">Квартиры без мебели</li>
-                            </ul>
-                        </div>
                     </div>
+
+
+
+                        <button type="button" class="btn btn-primary blue_btn center-block">
+                            <img src="../img/object-page/check.png" alt="check">Добавить обявления</button>
+
                 </div>
-                <div class="row">
-                    <div class="center-block">
-                        <button type="button" class="btn btn-primary">Primary</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
         <!--  ----------------- SEARCH ------------- -->
         <div class="container-fluid search__area">
-            <div class="container"></div>
+            <div class="container">
+                <div class="row">
+                    <h3 class="page-header ">Категории поиска:</h3>
+                    <div class="col-md-4 col-xs-12 price__col">
+                        <p>Стоимость:  у.е.   /   бел.руб.</p>
+                        
+                        <span>От:</span>
+                        <input type="text" class="ot">
+                        <span>До:</span>
+                        <input type="text" class="do">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Комнат
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3 </a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Район
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">район</a></li>
+                                <li><a href="#">район</a></li>
+                                <li><a href="#">район</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <span>Дополнительно:</span>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 2</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 3</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 3</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <span>Метро:</span>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Метро:</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Московская линия метро</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Московская линия метро</label>
+                        </div>
+                        <button class="btn btn-default red__button" type="button" data-toggle="dropdown">Подобрать</button>
+                    </div>
+                 </div>
+            </div>
         </div>
 
         <!--  ----------------- RESULTS ------------- -->
@@ -339,7 +406,7 @@
     </div>
 
 
-    </div>
+
 
 <!-- scripts -->
 <script src="/js/vendor.js"></script>

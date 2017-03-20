@@ -69,6 +69,7 @@
   }
 
 }
+
 & .map__area{
   margin: 0;
   padding: 0;
@@ -80,8 +81,15 @@
   margin: 0;
   padding: 0;
   height: 410px;
+  //& .container{
+  //  border: 1px solid black;
+  //}
+  //& .col-md-4{
+  //  border: 1px solid black;
+  //}
 
  & .flat__types{
+
 
    margin-top:65px;
 
@@ -91,11 +99,30 @@
      &__item{
        list-style-image: url('../img/object-page/house-icon.png');
        margin-top:35px;
-       width:360px;
+       height: 100%;
+       color: @grey;
+       font-size:18px;
+
+       font-family:"OpenSansLight";
+       //width:360px;
+
+
      }
    }
-
  }
+  & .blue_btn{
+    background-color: #1298e3;
+    height: 60px;
+    width: 367px;
+    font-size:26px;
+    margin-top:75px;
+    font-family: "OpenSans-Bold";
+
+    & img{
+      margin-right:7px;
+    }
+
+  }
 }
 
 & .search__area{
@@ -103,6 +130,47 @@
   padding:0;
   height: 290px;
   background-color:#33b4fc ;
+
+  & span, & p{
+    font-family:"OpenSansLight";
+    font-size:18px;
+    color: #fff;
+  }
+  & label{
+    color: #fff;
+    font-family: "OpenSansLight";
+    font-size:18px;
+  }
+  & .page-header{
+    color: #fff;
+    border: 0;
+  }
+
+  & .ot, & .do{
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+
+  }
+
+  & .btn{
+    width: 220px;
+    background-color: #fff;
+    margin-top:20px;
+    text-align: left;
+  }
+  & .caret{
+    text-align: right;
+  }
+
+  & .radio{
+    color: #fff;
+  }
+  & .red__button{
+    background-color: #ff4800;
+    color: #fff;
+    text-align: center;
+  }
 }
 
 & .result__area{
@@ -184,3 +252,68 @@
    }
 
 }
+
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width : 320px) {
+  & .contact__wrapper{
+    display:inline-block;
+    color: white;
+    //text-align: right;
+
+    & .contact__wrapper__right{
+      & p{
+        display: block;
+        height: 30px;
+        text-align: right;
+      }
+
+      & .number{
+        color: @grey;
+        font-size:24px;
+        font-family: "OpenSansBold";
+
+        & .logo{
+          padding-right:0px;
+        }
+
+      }
+      & .call{
+        color: @grey;
+        font-size:22px;
+        font-family: "OpenSansLight";
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        &:focus{
+          border: 0px;
+          line-height: 0px;
+        }
+      }
+
+    }
+
+
+  }
+}
+
