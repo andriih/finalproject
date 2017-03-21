@@ -65,6 +65,11 @@ html,body {
  .number-grey{
 	 font-size:24px;
 	 color: @grey;
+
+	 &:focus{
+		 color: @grey;
+		 outline: none !important;
+	 }
  }
 
  .agency__header{
@@ -112,7 +117,7 @@ html,body {
 			padding: 0;
 			border: 0px;
 			&:focus{
-				border: 0px;
+				outline: none !important;
 				line-height: 0px;
 			}
 		}
