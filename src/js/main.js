@@ -1,4 +1,4 @@
-
+$("#demo01").animatedModal();
 
 $(window).scroll(function(){
 	var st  = $(this).scrollTop();

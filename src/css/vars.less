@@ -125,6 +125,7 @@
 		& .Menu-list-grey{
 			display: block;
 		}
+
 		& .Menu-item{
 			margin: 0;
 			padding: 0;
@@ -133,10 +134,14 @@
 			text-align: center;
 		}
 		& .Menu-link{
-			color: #fff;
+			line-height:104px;
 			width: 100%	;
 			display: block;
-			height: 104px;
+			color: #fff;
+
+			&:hover{
+				border-bottom:1px solid @blue-color;
+			}
 		}
 	}
 }

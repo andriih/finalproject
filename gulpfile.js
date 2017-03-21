@@ -45,8 +45,8 @@ gulp.task("js:vendor", function() {
         "node_modules/jquery-validation/dist/jquery.validate.min.js",
         "node_modules/jquery-validation/dist/additional-methods.js",
         "node_modules/datatables.net/js/jquery.dataTables.js",
-        "node_modules/datatables.net-bs/js/dataTables.bootstrap.js"
-
+        "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
+        "src/js/animatedModal.min.js"
 
     ])
         .pipe(concat("vendor.js"))
@@ -59,7 +59,9 @@ gulp.task("css:vendor", function() {
     return gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.css",
         "node_modules/toastr/build/toastr.min.css",
-        "node_modules/datatables.net-bs/css/dataTables.bootstrap.css"
+        "node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
+        "src/css/animate.min.css"
+
     ])
         .pipe(gulpif(!isDevelopment,nano()))
         .pipe(concat("vendor.css"))
