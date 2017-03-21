@@ -140,23 +140,27 @@
                 function initMap() {
                     // Create a map object and specify the DOM element for display.
                     var map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: -33.86, lng: 151.209},
+                        center: {lat: 53.9, lng: 27.5667},
                         scrollwheel: false,
                         zoom: 15,
                         mapTypeControl: false
                     });
 
-                    var styleControl = document.getElementById('style-selector-control');
-                    map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
-
-                    // Set the map's style to the initial value of the selector.
-                    var styleSelector = document.getElementById('style-selector');
-                    map.setOptions({styles: styles[styleSelector.value]});
-
-                    // Apply new JSON when the user selects a different style.
-                    styleSelector.addEventListener('change', function() {
-                        map.setOptions({styles: styles[styleSelector.value]});
+                    marker = new google.maps.Marker({
+                        map: map,
+                        draggable: true,
+                        animation: google.maps.Animation.DROP,
+                        position: {lat:53.9, lng: 27.5667}
                     });
+                    marker.addListener('click', toggleBounce);
+                }
+
+                function toggleBounce() {
+                    if (marker.getAnimation() !== null) {
+                        marker.setAnimation(null);
+                    } else {
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                    }
 
                 }
 
