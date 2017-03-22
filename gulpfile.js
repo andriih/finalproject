@@ -7,7 +7,7 @@ var uglify = require("gulp-uglify");
 var gulpif = require("gulp-if");
 var autoprefixer = require("gulp-autoprefixer");
 var sync = require("browser-sync").create();
-
+var imagemin = require('gulp-imagemin');
 
 var isDevelopment = false;
 
@@ -18,6 +18,7 @@ gulp.task("data",function(){
 
 gulp.task("img",function(){
     return gulp.src("src/img/**/*/")
+        .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
 });
 
