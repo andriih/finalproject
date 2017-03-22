@@ -1,4 +1,11 @@
-$("#demo01").animatedModal();
+$(document).ready(function() {
+    $("#demo01").animatedModal();
+    $("#demo02").animatedModal();
+    $("#demo03").animatedModal();
+    $("#demo04").animatedModal();
+});
+
+
 
 $(window).scroll(function(){
 	var st  = $(this).scrollTop();

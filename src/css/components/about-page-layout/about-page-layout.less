@@ -6,14 +6,20 @@
 
 
 
+
 .about__header{
   border-bottom:2px solid @blue-color;
 
+  & .navbar-header{
+    background-color: #fff;
+  }
 
   & .contact__wrapper{
     display:inline-block;
     color: white;
     //text-align: right;
+
+
 
     & .contact__wrapper__right{
       & p{
@@ -275,6 +281,12 @@
     }
    }
 
+}
+
+& .footer__area__contacts{
+  & .navbar-header{
+    background-color: #fff;
+  }
 }
 
 @media only screen and (max-width : 1200px) {
