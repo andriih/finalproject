@@ -225,7 +225,7 @@ $("#add-modal-form").validate({
         }
     },
     submitHandler: function(form) {
-        toastr.success('Вопрос отправлен!');
+        toastr.success('Квартира добавлена!');
         $("#add-modal-form")[0].reset();
         $('#add-modal').removeClass('in').attr('style','display:none;');
         $(".modal-backdrop.fade.in").remove();
