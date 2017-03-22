@@ -11,6 +11,12 @@
             width: 100%;
             height: 577px;
         }
+
+        #map3{
+            width: 100%;
+            height: 1200px;
+            max-height:2000px;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +27,7 @@
 
     <!-- --------------------- HEADER ----------------- -->
 
-    <header class="container__fluid about__header">
+    <header class="container__fluid about__header" id="scroll__header_id">
 
             <nav class="nav_menu">
                 <div class="container">
@@ -46,7 +52,7 @@
                             <ul class="Menu-list-grey">
                                 <li class="Menu-item"><a href="index.html" class="Menu-link">Главная</a></li>
                                 <li class="Menu-item"><a href="about.html" class="Menu-link">О нас</a></li>
-                                <li class="Menu-item"><a href="contacts.html" class="Menu-link">Контакты</a></li>
+                                <li class="Menu-item"><a href="#" class="Menu-link">Контакты</a></li>
                             </ul>
                         </div>
 
@@ -353,9 +359,9 @@
 
                         <div class="collapse navbar-collapse navbar-left text-center" id="bottom_menu_about">
                             <ul class="Menu-list-grey">
-                                <li class="Menu-item"><a href="#" class="Menu-link">Главная</a></li>
-                                <li class="Menu-item"><a href="#" class="Menu-link">О нас</a></li>
-                                <li class="Menu-item"><a href="#" class="Menu-link">Контакты</a></li>
+                                <li class="Menu-item"><a href="index.html" class="Menu-link">Главная</a></li>
+                                <li class="Menu-item"><a href="#scroll__header_id" class="Menu-link">О нас</a></li>
+                                <li class="Menu-item"><a href="#scroll__header_id" class="Menu-link">Контакты</a></li>
                             </ul>
                         </div>
 
@@ -365,14 +371,14 @@
                                     <img src="img/sheet-small-icon.png" alt="phone">
                                 </p>
                             </a>
-                            <button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#footer-form-about">Написать нам</button>
+                            <button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#footer-form">Написать нам</button>
 
 
 
 
 
                             <!-- -----------------------------Modal----------------------------- -->
-                            <div class="modal fade modal__contacts" id="footer-form-about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal fade modal__contacts" id="footer-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal__wrapper" role="document">
                                     <div class="modal-content modal__wrapper modal__wrapper__footer">
 
@@ -382,7 +388,7 @@
 
                                         <div class="modal-body text-center">
                                             <h4 class="modal-title">Есть вопрос? Спрашивайте!</h4>
-                                            <form novalidate="novalidate" name="footer-form" action="#" id="footer-form">
+                                            <form novalidate="novalidate" name="footer-form" action="#" id="footer-form__wrapper">
                                                 <div class="form-group">
                                                     <input type="text" name="name" id="name-f" class="form-control"  placeholder="Ваше имя">
 
@@ -464,9 +470,8 @@
     </div>
 
 
-
 <!-- scripts -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhG6qNEB598qsu4xL2SYlNYMfGCJ8i0I4&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhG6qNEB598qsu4xL2SYlNYMfGCJ8i0I4&callback=initMap" async defer></script>
 <script src="/js/vendor.js"></script>
 <script src="/js/main.js"></script>
 </body>
