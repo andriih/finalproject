@@ -114,8 +114,8 @@
                 <div class="col-md-6">
                     <div class="brad__crambs">
                         <a href="index.html">Главная</a><span class="separator">.</span>
-                        <a href="index.html">Продажа квартир </a><span class="separator">.</span>
-                        <a href="index.html">Квартири комнати</a>
+                        <a href="#scroll__header_id">Продажа квартир </a><span class="separator">.</span>
+                        <a href="#scroll__header_id">Квартири комнати</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
     </div>
 
     <!--  -----------------GOOGLE MAP------------- -->
-    <div class="container-fluid map__area">
+    <div class="container-fluid map__area" id="map__area">
         <div class="row">
             <div id="map"></div>
             <script>
@@ -217,7 +217,7 @@
 
                         <div class="modal-body text-center">
                             <h4 class="modal-title">Есть вопрос? Спрашивайте!</h4>
-                            <form novalidate="novalidate" name="footer-form" action="#" id="footer-form">
+                            <form novalidate="novalidate" name="footer-form" action="#" id="add-modal-form">
                                 <div class="form-group">
                                     <input type="text" name="name" id="name-f" class="form-control"  placeholder="Ваше имя">
 
@@ -234,7 +234,7 @@
                                     <textarea name="question" id="qustn" class="form-control" cols="30" rows="2" placeholder="Задайте вопрос "></textarea>
                                 </div>
 
-                                <button type="submit" class="btn btn-default send__btn btn__footer">Отправить</button>
+                                <button type="submit" class="btn btn-default send__btn btn__footer__miidle">Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                             <ul class="Menu-list-grey">
                                 <li class="Menu-item"><a href="index.html" class="Menu-link">Главная</a></li>
                                 <li class="Menu-item"><a href="#scroll__header_id" class="Menu-link">О нас</a></li>
-                                <li class="Menu-item"><a href="#scroll__header_id" class="Menu-link">Контакты</a></li>
+                                <li class="Menu-item"><a href="#map__area" class="Menu-link">Контакты</a></li>
                             </ul>
                         </div>
 
@@ -371,14 +371,14 @@
                                     <img src="img/sheet-small-icon.png" alt="phone">
                                 </p>
                             </a>
-                            <button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#footer-form">Написать нам</button>
+                            <button type="button" class="btn btn-link number-grey" data-toggle="modal" data-target="#footer-form-about">Написать нам</button>
 
 
 
 
 
                             <!-- -----------------------------Modal----------------------------- -->
-                            <div class="modal fade modal__contacts" id="footer-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal fade modal__contacts" id="footer-form-about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal__wrapper" role="document">
                                     <div class="modal-content modal__wrapper modal__wrapper__footer">
 
@@ -390,7 +390,7 @@
                                             <h4 class="modal-title">Есть вопрос? Спрашивайте!</h4>
                                             <form novalidate="novalidate" name="footer-form" action="#" id="footer-form__wrapper">
                                                 <div class="form-group">
-                                                    <input type="text" name="name" id="name-f" class="form-control"  placeholder="Ваше имя">
+                                                    <input type="text" name="name" id="name-f-a" class="form-control"  placeholder="Ваше имя">
 
                                                 </div>
                                                 <div class="form-group">
@@ -402,7 +402,7 @@
 
                                                 </div>
                                                 <div class="form-group">
-                                                    <textarea name="question" id="qustn" class="form-control" cols="30" rows="2" placeholder="Задайте вопрос "></textarea>
+                                                    <textarea name="question" id="qustn1" class="form-control" cols="30" rows="2" placeholder="Задайте вопрос "></textarea>
                                                 </div>
 
                                                 <button type="submit" class="btn btn-default send__btn btn__footer">Отправить</button>

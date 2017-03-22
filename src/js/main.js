@@ -141,8 +141,9 @@ $("#footer-form").validate({
         $('body').removeAttr('class').removeAttr('style');
     }
 });
+
 ///FOOTER form ABout
-$("#footer-form-about").validate({
+$("#footer-form__wrapper").validate({
     rules: {
         name: {
             lettersonly: true,
@@ -179,14 +180,58 @@ $("#footer-form-about").validate({
     },
     submitHandler: function(form) {
         toastr.success('Вопрос отправлен!');
-        $("#footer-form-about")[0].reset();
-        $('#myModal__question').removeClass('in').attr('style','display:none;');
+        $("#footer-form__wrapper")[0].reset();
+        $('#footer-form-about').removeClass('in').attr('style','display:none;');
         $(".modal-backdrop.fade.in").remove();
         $('body').removeAttr('class').removeAttr('style');
     }
 });
 
 
+///add form modal
+$("#add-modal-form").validate({
+    rules: {
+        name: {
+            lettersonly: true,
+            minlength: 3,
+            maxlength: 15,
+            required: true
+        },
+        email: {
+            required: true
+        },
+        number: {
+            minlength: 10,
+            maxlength: 15,
+            required: true
+        },
+        question:{
+            required: true
+        }
+    },
+    highlight: function(element) {
+        $(element).closest('.form-group').addClass('has-error');
+    },
+    unhighlight: function(element) {
+        $(element).closest('.form-group').removeClass('has-error');
+    },
+    errorElement: 'div',
+    errorClass: 'help-block',
+    errorPlacement: function(error, element) {
+        if(element.parent('.input-group').length) {
+            error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+        }
+    },
+    submitHandler: function(form) {
+        toastr.success('Вопрос отправлен!');
+        $("#add-modal-form")[0].reset();
+        $('#add-modal').removeClass('in').attr('style','display:none;');
+        $(".modal-backdrop.fade.in").remove();
+        $('body').removeAttr('class').removeAttr('style');
+    }
+});
 
 
 //////////////////DATATABLE
